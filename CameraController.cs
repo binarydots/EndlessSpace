@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour {
 		offset = transform.position - player.transform.position;
 	}
 	
+	// Use this for late (after calculations) update
 	void LateUpdate () {
 		transform.position = player.transform.position + offset;
 	}
